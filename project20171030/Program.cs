@@ -8,7 +8,7 @@ namespace project20171030
     {
         static void Main(string[] args)
         {
-            IPerson person = ProxyFactory.newProxy<IPerson>(new Person(), typeof(IPerson), typeof(PersonProxy));
+            IPerson person = ProxyFactory.NewProxy<IPerson>(new Person(), typeof(IPerson), typeof(PersonProxy));
             person.Run();
             person.Eat("shit");
             Console.Read();
